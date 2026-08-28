@@ -4,7 +4,7 @@
  * ค่าเริ่มต้นคือส่งงานต่อให้ตัวที่ห่อ — คลาสลูกค่อย override เพิ่มความสามารถ
  */
 public abstract class ShipmentDecorator implements Shipment {
-    protected Shipment wrappedShipment;
+    protected Shipment wrappedShipment; // มอบงานต่อ
 
     public ShipmentDecorator(Shipment wrappedShipment) {
         if (wrappedShipment == null)
